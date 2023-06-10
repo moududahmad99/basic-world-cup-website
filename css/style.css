@@ -1,21 +1,102 @@
 /* Common Css End */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /* Common Css End */
+
+/* Banner Area Start */
+#banner {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+.banner-wrapper {
+  background: #27374D;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.banner-inner--left h3 {
+  font-family: "Grandiflora One";
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-right: 40px;
+  line-height: 70px;
+  color: aliceblue;
+}
+
+.banner-inner--left p {
+  font-family: "Roboto";
+  margin: 30px 0;
+  color: aliceblue;
+  font-weight: 300;
+}
+
+.banner-inner-left--button a {
+  padding: 10px 25px;
+  background: #1c1f24;
+  font-family: "Montserrat";
+  color: aliceblue;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.banner-inner-left--button a i {
+  margin-left: 8px;
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.banner-inner--right img {
+  animation-name: slideIn;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(25%);
+    -webkit-transform: translateX(25%);
+    -moz-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    -o-transform: translateX(25%);
+}
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Banner Area End */
